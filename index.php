@@ -117,16 +117,26 @@
 
         <!--home__margin1-->
         <div class="home__margin1">
-            <div class="grid">
+            <div class="home__box6"><h3>CHUỖI CUNG ỨNG THỰC PHẨM AN TOÀN</h3></div>
+            <div class="grid home__grid16">
                 <?php for ($i=0;$i<=3;$i++): ?>
                 <div class="width-1-2 width-1-4-m">
-                    <div class="position-relative overflow-hidden">
-                        <div class="position-cover" data-src="https://znews-photo.zadn.vn/w660/Uploaded/dqvpxpck/2021_10_24/XADV_vietnam.jpg" uk-img></div>
+                    <div class="position-relative overflow-hidden home__box5__container">
+                        <div class="position-cover home__box5__img" data-src="https://znews-photo.zadn.vn/w660/Uploaded/dqvpxpck/2021_10_24/XADV_vietnam.jpg" uk-img></div>
                         <canvas width="398" height="270"></canvas>
+                        <div class="position-bottom home__box5__content">SẢN PHẨM CHUỖI CUNG ỨNG THỰC
+                            PHẨM AN TOÀN HIỀN NHUẦN</div>
+                        <a href="" class="position-cover"></a>
                     </div>
                 </div>
                 <?php endfor; ?>
             </div>
+        </div>
+        <!--/home__margin1-->
+
+        <!--home__margin1-->
+        <div class="home__margin1">
+            
         </div>
         <!--/home__margin1-->
     </div>
