@@ -52,3 +52,29 @@ $j:
     @include uk-grid($i);
   }
 }
+
+.grid{
+  display: flex;
+  /* 1 */
+  flex-wrap: wrap;
+  /* 2 */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &-match{
+    >*{
+      display: flex;
+      /* 1 */
+      flex-wrap: wrap;
+      >* {
+        &:not([class*='width']){
+          /* 2 */
+          box-sizing: border-box;
+          width: 100%;
+          /* 3 */
+          flex: auto;
+        }
+      }
+    }
+  }
+}

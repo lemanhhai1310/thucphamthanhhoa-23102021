@@ -20,21 +20,31 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
 </head>
 <body class="">
 <!--app-->
 <div id="app" class="">
     <!--header-->
     <div class="header">
+
+        <!--header__top-->
         <div class="header__top">
             <div class="container">
                 <div class="text-center">
-                    <h1>THÔNG TIN AN TOÀN THỰC PHẨM TỈNH THANH HÓA</h1>
-                    
+                    <h1 class="header__top__title">THÔNG TIN AN TOÀN THỰC PHẨM TỈNH THANH HÓA</h1>
+                    <div class="header__top__grid">
+                        <div class="header__top__form">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm">
+                            <button class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--/header__top-->
+
+        <!--header__bottom-->
         <div class="header__bottom">
             <div class="container">
                 <nav class="header__bottom__navbar">
@@ -56,5 +66,7 @@
                 </nav>
             </div>
         </div>
+        <!--/header__bottom-->
+
     </div>
     <!--/header-->

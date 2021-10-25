@@ -1,0 +1,39 @@
+[class*='position-top'],
+[class*='position-bottom'],
+[class*='position-left'],
+[class*='position-right'],
+[class*='position-center']{
+  position: absolute !important;
+  /* 1 */
+  max-width: 100%;
+}
+.position{
+  &-bottom{
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  /* Cover
+   ========================================================================== */
+  &-cover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  /* Utility
+   ========================================================================== */
+  &-relative{
+    position: relative !important;
+  }
+  &-absolute{
+    position: absolute !important;
+  }
+  &-fixed{
+    position: fixed !important;
+  }
+  &-z-index{
+    z-index: 1;
+  }
+}

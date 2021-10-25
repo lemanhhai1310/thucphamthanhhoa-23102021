@@ -1,6 +1,48 @@
 .header{
   &__top{
-    padding: 20px 0;
+    padding: 15px 0;
+    @include media-breakpoint-up('m'){
+      padding: 25px 0;
+    }
+    &__title{
+      @extend .fz-48;
+      color: #749945;
+      font-family: $font-Roboto-Bold;
+      margin-top: 0;
+      margin-bottom: 15px;
+      @include media-breakpoint-up('m'){
+        margin-bottom: 26px;
+      }
+    }
+    &__form{
+      width: 100%;
+      @include media-breakpoint-up('m'){
+        max-width: 517px;
+      }
+      position: relative;
+      .form-control{
+        border-radius: 4px;
+        background-color: #f2f5f8;
+        border-color: #f2f5f8;
+        box-shadow: none;
+        padding-right: 50px;
+      }
+      .btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-image: none;
+        background-color: #749945 !important;
+        border-color: #749945 !important;
+        color: #ffffff;
+      }
+    }
+    &__grid{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   &__bottom{
     background-color: #749945;
@@ -18,14 +60,17 @@
         margin-left: auto;
       }
       &__navitem{
-        min-height: 56px;
+        min-height: 50px;
+        @include media-breakpoint-up('m'){
+          min-height: 56px;
+        }
         display: flex;
         justify-content: center;
         align-items: center;
         column-gap: .25em;
         box-sizing: border-box;
         padding: 0 15px;
-        @extend .fz-14;
+        @extend .fz-20;
         text-decoration: none;
       }
       &__nav{
@@ -33,6 +78,9 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        @include media-breakpoint-down('s'){
+          display: none !important;
+        }
         >li{
           >a{
             @extend .header__bottom__navbar__navitem;
