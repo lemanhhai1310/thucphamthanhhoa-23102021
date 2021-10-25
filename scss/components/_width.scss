@@ -36,5 +36,13 @@
         }
       }
     }
+    &-6{
+      width: calc(100% * 1 / 6.001);
+      &-m{
+        @include media-breakpoint-up('m'){
+          width: calc(100% * 1 / 6.001);
+        }
+      }
+    }
   }
 }

@@ -2,6 +2,7 @@
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="home__section">
     <div class="container">
+        <!--home__margin1-->
         <div class="home__margin1">
             <div class="grid home__grid19 grid-match">
                 <div class="width-expand">
@@ -83,10 +84,51 @@
                 </div>
             </div>
         </div>
+        <!--/home__margin1-->
 
+        <!--home__margin1-->
         <div class="home__margin1">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs home__tab" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">ĐƠN VỊ ĐƯỢC CẤP CHỨNG NHẬN</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">SẢN PHẨM ĐƯỢC CẤP CHỨNG NHẬN</a></li>
+            </ul>
 
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="grid home__grid21">
+                        <?php for ($i=1;$i<=18;$i++): ?>
+                        <div class="width-1-2 width-1-6-m">
+                            <div class="position-relative overflow-hidden home__box4__container">
+                                <div class="position-cover home__box4__img" data-src="https://znews-photo.zadn.vn/w660/Uploaded/natmzz/2021_10_25/2021_10_24T192031Z_454260450_UP1EHAO1HQ43V_RTRMADP_3_SOCCER_FRANCE_OLM_PSG_REPORT.JPG" uk-img></div>
+                                <canvas width="224" height="125"></canvas>
+                            </div>
+                            <h3 class="home__box4__title"><a href="">Công ty TNHH Sản xuất và thương mại Hiền Nhuân</a></h3>
+                            <div class="home__box4__desc">Địa chỉ: Số 111C, Phố Tây Ga, Phường Phú Sơn, TP Thanh Hóa</div>
+                        </div>
+                        <?php endfor; ?>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">...</div>
+            </div>
         </div>
+        <!--/home__margin1-->
+
+        <!--home__margin1-->
+        <div class="home__margin1">
+            <div class="grid">
+                <?php for ($i=0;$i<=3;$i++): ?>
+                <div class="width-1-2 width-1-4-m">
+                    <div class="position-relative overflow-hidden">
+                        <div class="position-cover" data-src="https://znews-photo.zadn.vn/w660/Uploaded/dqvpxpck/2021_10_24/XADV_vietnam.jpg" uk-img></div>
+                        <canvas width="398" height="270"></canvas>
+                    </div>
+                </div>
+                <?php endfor; ?>
+            </div>
+        </div>
+        <!--/home__margin1-->
     </div>
 </div>
 <?php require "template-parts/layouts/footer.php"; ?>
