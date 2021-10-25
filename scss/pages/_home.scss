@@ -110,6 +110,13 @@
     background-color: #e93e3e;
     color: #ffffff;
     @extend .fz-20;
+    marquee{
+      >*{
+        &:nth-child(n+2){
+          margin-left: 30px;
+        }
+      }
+    }
   }
   &__box6{
     h3{
