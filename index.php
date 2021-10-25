@@ -136,7 +136,13 @@
 
         <!--home__margin1-->
         <div class="home__margin1">
-            
+            <div class="home__box7">
+                <marquee onmouseover="this.stop();" onmouseout="this.start();">
+                    <span>Xử phạt cơ sở A vi phạm về nhãn mác</span>
+                    <span>Xử phạt cơ sở B vi phạm về nhãn mác</span>
+                    <span>Xử phạt cơ sở C vi phạm về nhãn mác</span>
+                </marquee>
+            </div>
         </div>
         <!--/home__margin1-->
     </div>

@@ -103,6 +103,14 @@
       color: #133b3a;
     }
   }
+  &__box7{
+    padding: 12px 15px;
+    padding-bottom: 8px;
+    border: solid 1px #707070;
+    background-color: #e93e3e;
+    color: #ffffff;
+    @extend .fz-20;
+  }
   &__box6{
     h3{
       padding: 0px 15px;
