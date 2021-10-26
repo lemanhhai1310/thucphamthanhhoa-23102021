@@ -6,7 +6,7 @@
     }
     &__title{
       @extend .fz-48;
-      color: #749945;
+      color: $color-primary;
       font-family: $font-Roboto-Bold;
       margin-top: 0;
       margin-bottom: 15px;
@@ -33,8 +33,8 @@
         right: 0;
         bottom: 0;
         background-image: none;
-        background-color: #749945 !important;
-        border-color: #749945 !important;
+        background-color: $color-primary !important;
+        border-color: $color-primary !important;
         color: #ffffff;
       }
     }
@@ -45,7 +45,7 @@
     }
   }
   &__bottom{
-    background-color: #749945;
+    background-color: $color-primary;
     .container{
       padding: 0;
     }

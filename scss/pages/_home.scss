@@ -1,3 +1,9 @@
+.container{
+  width: 100%;
+  @include media-breakpoint-up('xl'){
+    max-width: 1671px;
+  }
+}
 .home{
   &__section{
     padding: 20px 0;
@@ -57,6 +63,25 @@
       }
     }
   }
+  &__grid52{
+    $x:52px;
+    margin-left: -15px;
+    @include media-breakpoint-up('m'){
+      margin-left: -#{$x};
+    }
+    >*{
+      padding-left: 15px;
+      @include media-breakpoint-up('m'){
+        padding-left: #{$x};
+      }
+      &.uk-grid-margin{
+        margin-top: 15px;
+        @include media-breakpoint-up('m'){
+          margin-top: calc(#{$x} + 3px);
+        }
+      }
+    }
+  }
   &__tab{
     margin-bottom: 20px;
     border: none !important;
@@ -70,7 +95,7 @@
       }
       &.active{
         >a{
-          background-color: #749945 !important;
+          background-color: $color-primary !important;
           color: #ffffff !important;
           font-family: $font-Roboto-Bold;
         }
@@ -125,7 +150,7 @@
         padding: 0 50px;
       }
       border-radius: 4px;
-      background-color: #729b45;
+      background-color: $color-primary;
       color: #ffffff;
       @extend .fz-20;
       font-family: $font-Roboto-Bold;
@@ -148,10 +173,10 @@
     }
     &__content{
       text-align: center;
-      background-color: rgba(#749945,0.8);
+      background-color: rgba($color-primary,0.8);
       color: #ffffff;
       @extend .fz-20;
-      padding: 5px 10px;
+      padding: 12px 10px;
     }
   }
   &__grid20{
@@ -191,7 +216,7 @@
     }
     &__txt{
       padding: 5px 10px;
-      background-color: rgba(#749945,0.8);
+      background-color: rgba($color-primary,0.8);
       text-align: center;
       color: #ffffff;
       @extend .fz-20;
@@ -222,11 +247,11 @@
       @extend .fz-20;
       color: #354e57;
       &:nth-child(n+2){
-        margin-top: 15px;
+        margin-top: 29px;
       }
       h3{
         margin: 0;
-        color: #729b45;
+        color: $color-primary;
         @extend .fz-20;
         font-family: $font-Roboto-Bold;
       }
@@ -236,15 +261,18 @@
     border-radius: 4px;
     box-shadow: inset 0 3px 10px 0 rgba(0, 0, 0, 0.16);
     background-color: rgba(228, 228, 228, 0.79);
-    padding: 10px;
+    padding: 10px 20px;
     &__title{
       margin: 0;
-      color: #729b45;
+      color: $color-primary;
       @extend .fz-24;
       font-family: $font-Roboto-Bold;
       padding-bottom: 5px;
-      border-bottom: 1px solid #729b45;
+      border-bottom: 1px solid $color-primary;
       margin-bottom: 10px;
+      a{
+        color: $color-primary;
+      }
     }
     &__list{
       >li{
