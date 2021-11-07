@@ -1,5 +1,19 @@
 .footer{
   padding: 25px 0;
   background-color: $color-primary;
-  color: #ffffff;
+  color: #e4e4e4;
+  &__title{
+    @extend .fz-24;
+    color: #ffffff;
+  }
+  &__list{
+    >li{
+      >a{
+        color: #e4e4e4;
+      }
+    }
+  }
+  &__desc{
+    @extend .fz-20;
+  }
 }
