@@ -5,6 +5,20 @@
   }
 }
 .home{
+  &__hidden{
+    @include media-breakpoint-up('m'){
+      display: none;
+    }
+  }
+  &__navhiden{
+    >li{
+      &:last-child{
+        @include media-breakpoint-down('s'){
+          display: none;
+        }
+      }
+    }
+  }
   &__section{
     padding: 20px 0;
   }
@@ -177,6 +191,16 @@
       color: #ffffff;
       @extend .fz-20;
       padding: 12px 10px;
+      @include media-breakpoint-down('s'){
+        padding: 6px 4px;
+        font-size: 13px !important;
+        >*{
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden
+        }
+      }
     }
   }
   &__grid20{
@@ -220,6 +244,12 @@
       text-align: center;
       color: #ffffff;
       @extend .fz-20;
+      @include media-breakpoint-down('s'){
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden
+      }
     }
   }
   &__box3{
@@ -262,6 +292,9 @@
     box-shadow: inset 0 3px 10px 0 rgba(0, 0, 0, 0.16);
     background-color: rgba(228, 228, 228, 0.79);
     padding: 10px 20px;
+    .donvi__section &{
+      padding-bottom: 20px;
+    }
     &__title{
       margin: 0;
       color: $color-primary;

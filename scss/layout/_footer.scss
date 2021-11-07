@@ -3,17 +3,28 @@
   background-color: $color-primary;
   color: #e4e4e4;
   &__title{
+    margin-top: 0;
     @extend .fz-24;
     color: #ffffff;
+    line-height: 1.25;
+    @include media-breakpoint-down('s'){
+      font-size: 12px !important;
+    }
   }
   &__list{
     >li{
       >a{
-        color: #e4e4e4;
+        color: #fff;
+        @include media-breakpoint-down('s'){
+          font-size: 12px !important;
+        }
       }
     }
   }
   &__desc{
     @extend .fz-20;
+    @include media-breakpoint-down('s'){
+      font-size: 12px !important;
+    }
   }
 }

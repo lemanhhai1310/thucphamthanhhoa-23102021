@@ -1,0 +1,37 @@
+.donvi{
+  &__section{
+    @include media-breakpoint-up('m'){
+      padding-top: 54px;
+      padding-bottom: 64px;
+    }
+  }
+  &__item{
+    &:nth-child(n+2){
+      margin-top: 15px;
+      @include media-breakpoint-up('m'){
+        margin-top: 20px;
+      }
+    }
+    &__boxImg{
+      border-radius: 4px;
+    }
+    &__img{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__title{
+      margin-top: 0;
+      line-height: 1.25;
+      @extend .fz-24;
+      font-weight: bold;
+      a{
+        color: #133b3a;
+      }
+    }
+    &__desc{
+      color: #133b3a;
+      @extend .fz-20;
+    }
+  }
+}

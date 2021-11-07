@@ -32,7 +32,7 @@
         <div class="header__top">
             <div class="container">
                 <div class="text-center">
-                    <h1 class="header__top__title">THÔNG TIN AN TOÀN THỰC PHẨM TỈNH THANH HÓA</h1>
+                    <h1 class="header__top__title">TRANG THÔNG TIN AN TOÀN THỰC PHẨM <br> TỈNH THANH HÓA</h1>
                     <div class="header__top__grid">
                         <div class="header__top__form">
                             <input type="text" class="form-control" placeholder="Tìm kiếm">
@@ -50,9 +50,9 @@
                 <nav class="header__bottom__navbar">
                     <div class="header__bottom__navbar__left">
                         <ul class="header__bottom__navbar__nav">
-                            <li class="active"><a href="">Trang Chủ</a></li>
+                            <li class="active"><a href=".">Trang Chủ</a></li>
                             <li><a href="">Sản Phẩm</a></li>
-                            <li><a href="">Đơn vị phân phối</a></li>
+                            <li><a href="donvi.php">Đơn vị phân phối</a></li>
                             <li><a href="">Chuỗi thực phẩm an toàn</a></li>
                             <li><a href="">Trợ giúp</a></li>
                             <li><a href="">Giới thiệu</a></li>

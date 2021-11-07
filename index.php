@@ -10,7 +10,7 @@
                         <div class="width-1-2-m">
                             <div class="position-relative home__box1">
                                 <div class="position-cover home__box1__img" data-src="https://znews-photo.zadn.vn/w960/Uploaded/aobohun/2021_10_22/IMGL9118_.jpg" uk-img></div>
-                                <canvas width="532" height="421"></canvas>
+                                <canvas width="1064" height="842"></canvas>
                                 <a href="" class="position-cover"></a>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                             <div class="width-1-2 width-1-4-m">
                                 <div class="position-relative overflow-hidden home__box2">
                                     <div class="position-cover home__box2__img" data-src="<?= $v['src'] ?>" uk-img></div>
-                                    <canvas width="254" height="192"></canvas>
+                                    <canvas width="762" height="576"></canvas>
                                     <div class="position-bottom home__box2__txt">Nem, giò, chả Phúc Hưng Nem, giò, chả Phúc Hưng</div>
                                     <a href="" class="position-cover"></a>
                                 </div>
@@ -68,7 +68,7 @@
                         <?php endforeach; ?>
                     </div>
                 </div>
-                <div class="width-1-3-m">
+                <div class="width-1-3-l">
                     <div class="home__boxtinhoatdong" style="display: flex;flex-direction: column">
                         <h3 class="home__boxtinhoatdong__title"><a href="">TIN HOẠT ĐỘNG</a></h3>
                         <ul class="grid home__boxtinhoatdong__list" style="justify-content: space-between;flex: auto">
@@ -94,29 +94,55 @@
 
         <!--home__margin1-->
         <div class="home__margin1">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs home__tab" role="tablist">
-                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">ĐƠN VỊ ĐƯỢC CẤP CHỨNG NHẬN</a></li>
-                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">SẢN PHẨM ĐƯỢC CẤP CHỨNG NHẬN</a></li>
-            </ul>
+            <div class="home__margin1">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs home__tab home__navhiden" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">ĐƠN VỊ ĐƯỢC CẤP CHỨNG NHẬN</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">SẢN PHẨM ĐƯỢC CẤP CHỨNG NHẬN</a></li>
+                </ul>
 
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home">
-                    <div class="grid home__grid52">
-                        <?php for ($i=1;$i<=18;$i++): ?>
-                        <div class="width-1-2 width-1-6-m">
-                            <div class="position-relative overflow-hidden home__box4__container">
-                                <div class="position-cover home__box4__img" data-src="https://znews-photo.zadn.vn/w660/Uploaded/natmzz/2021_10_25/2021_10_24T192031Z_454260450_UP1EHAO1HQ43V_RTRMADP_3_SOCCER_FRANCE_OLM_PSG_REPORT.JPG" uk-img></div>
-                                <canvas width="224" height="125"></canvas>
-                            </div>
-                            <h3 class="home__box4__title"><a href="">Công ty TNHH Sản xuất và thương mại Hiền Nhuân</a></h3>
-                            <div class="home__box4__desc">Địa chỉ: Số 111C, Phố Tây Ga, Phường Phú Sơn, TP Thanh Hóa</div>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <div class="grid home__grid52">
+                            <?php for ($i=1;$i<=18;$i++): ?>
+                                <div class="width-1-2 width-1-6-m">
+                                    <div class="position-relative overflow-hidden home__box4__container">
+                                        <div class="position-cover home__box4__img" data-src="https://znews-photo.zadn.vn/w660/Uploaded/natmzz/2021_10_25/2021_10_24T192031Z_454260450_UP1EHAO1HQ43V_RTRMADP_3_SOCCER_FRANCE_OLM_PSG_REPORT.JPG" uk-img></div>
+                                        <canvas width="224" height="125"></canvas>
+                                    </div>
+                                    <h3 class="home__box4__title"><a href="donvi.php">Công ty TNHH Sản xuất và thương mại Hiền Nhuân</a></h3>
+                                    <div class="home__box4__desc">Địa chỉ: Số 111C, Phố Tây Ga, Phường Phú Sơn, TP Thanh Hóa</div>
+                                </div>
+                            <?php endfor; ?>
                         </div>
-                        <?php endfor; ?>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+                </div>
+            </div>
+            <div class="home__margin1 home__hidden">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs home__tab" role="tablist">
+                    <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">SẢN PHẨM ĐƯỢC CẤP CHỨNG NHẬN</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <div class="grid home__grid52">
+                            <?php for ($i=1;$i<=18;$i++): ?>
+                                <div class="width-1-2 width-1-6-m">
+                                    <div class="position-relative overflow-hidden home__box4__container">
+                                        <div class="position-cover home__box4__img" data-src="https://znews-photo.zadn.vn/w660/Uploaded/natmzz/2021_10_25/2021_10_24T192031Z_454260450_UP1EHAO1HQ43V_RTRMADP_3_SOCCER_FRANCE_OLM_PSG_REPORT.JPG" uk-img></div>
+                                        <canvas width="224" height="125"></canvas>
+                                    </div>
+                                    <h3 class="home__box4__title"><a href="">Công ty TNHH Sản xuất và thương mại Hiền Nhuân</a></h3>
+                                    <div class="home__box4__desc">Địa chỉ: Số 111C, Phố Tây Ga, Phường Phú Sơn, TP Thanh Hóa</div>
+                                </div>
+                            <?php endfor; ?>
+                        </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="profile">...</div>
             </div>
         </div>
         <!--/home__margin1-->
@@ -130,8 +156,7 @@
                     <div class="position-relative overflow-hidden home__box5__container">
                         <div class="position-cover home__box5__img" data-src="https://znews-photo.zadn.vn/w660/Uploaded/dqvpxpck/2021_10_24/XADV_vietnam.jpg" uk-img></div>
                         <canvas width="398" height="270"></canvas>
-                        <div class="position-bottom home__box5__content">SẢN PHẨM CHUỖI CUNG ỨNG THỰC
-                            PHẨM AN TOÀN HIỀN NHUẦN</div>
+                        <div class="position-bottom home__box5__content"><span>SẢN PHẨM CHUỖI CUNG ỨNG THỰC PHẨM AN TOÀN HIỀN NHUẦN</span></div>
                         <a href="" class="position-cover"></a>
                     </div>
                 </div>
