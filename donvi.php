@@ -46,9 +46,64 @@
                     </div>
                     <div class="home__margin1">
                         <h3 class="home__boxtinhoatdong__title"><a href="">SẢN PHẨM</a></h3>
+                        <div>
+                            <?php
+                            $img = array(
+                                'https://znews-photo.zadn.vn/w960/Uploaded/natmzz/2021_11_07/2021_11_07T142046Z_1887921114_UP1EHB713UK7W_RTRMADP_3_SOCCER_ENGLAND_EVE_TOT_REPORT.JPG',
+                                'https://znews-photo.zadn.vn/w480/Uploaded/mdf_reovdl/2021_10_30/1EBF396C_E4CE_4A97_A153_4F31A783451F.jpeg',
+                                'https://znews-photo.zadn.vn/w480/Uploaded/lce_qjlcv/2021_11_07/tiem_2.jpg',
+                                'https://znews-photo.zadn.vn/w210/Uploaded/ngotgs/2021_11_07/A05zing.jpg',
+                                'https://znews-photo.zadn.vn/w210/Uploaded/wpdhnwhnw/2021_11_07/p_1.jpg',
+                                'https://znews-photo.zadn.vn/w210/Uploaded/mdf_reovdl/2021_10_28/Ma_lang_1_.jpg',
+                            );
+                            for ($i=0;$i<=2;$i++): ?>
+                            <div class="donvi__item1">
+                                <div class="grid home__grid21">
+                                    <div class="width-1-4-m">
+                                        <div class="position-relative overflow-hidden">
+                                            <div class="position-cover donvi__item__img" data-src="<?= $img[array_rand($img)] ?>" uk-img></div>
+                                            <canvas width="448" height="360"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="width-expand">
+                                        <h4 class="donvi__item1__title"><a href="">Thanh Hóa tổ chức Lễ Phát động Tháng hành động vì an toàn thực phẩm năm 2018</a></h4>
+                                        <div class="home__box3__img"><img src="images/group-3768.png" alt=""></div>
+                                        <p class="home__box3__desc">Nem được làm bằng thịt lợn nạc lọc kỹ để bỏ gân, giã nhỏ mịn. Bì lợn cạo sạch, luộc chín thái chỉ trộn với thịt nạc xay, nêm muối tinh rang khô, nước mắm ngon, mì chính hạt tiêu và thính. Thính được làm từ gạo rang chín vàng thơm rồi xay thật nhỏ. Cách tra thính nhiều hay ít, sớm hay muộn, cũng là bí quyết riêng của từng nhà nem. Tất cả được ủ một thời gian để lên men.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endfor; ?>
+                        </div>
                     </div>
                     <div class="home__margin1">
                         <h3 class="home__boxtinhoatdong__title"><a href="">CHUỖI THỰC PHẨM AN TOÀN</a></h3>
+                        <div>
+                            <?php
+                            $img = array(
+                                'https://znews-photo.zadn.vn/w960/Uploaded/natmzz/2021_11_07/2021_11_07T142046Z_1887921114_UP1EHB713UK7W_RTRMADP_3_SOCCER_ENGLAND_EVE_TOT_REPORT.JPG',
+                                'https://znews-photo.zadn.vn/w480/Uploaded/mdf_reovdl/2021_10_30/1EBF396C_E4CE_4A97_A153_4F31A783451F.jpeg',
+                                'https://znews-photo.zadn.vn/w480/Uploaded/lce_qjlcv/2021_11_07/tiem_2.jpg',
+                                'https://znews-photo.zadn.vn/w210/Uploaded/ngotgs/2021_11_07/A05zing.jpg',
+                                'https://znews-photo.zadn.vn/w210/Uploaded/wpdhnwhnw/2021_11_07/p_1.jpg',
+                                'https://znews-photo.zadn.vn/w210/Uploaded/mdf_reovdl/2021_10_28/Ma_lang_1_.jpg',
+                            );
+                            for ($i=0;$i<1;$i++): ?>
+                                <div class="donvi__item1">
+                                    <div class="grid home__grid21">
+                                        <div class="width-1-4-m">
+                                            <div class="position-relative overflow-hidden">
+                                                <div class="position-cover donvi__item__img" data-src="<?= $img[array_rand($img)] ?>" uk-img></div>
+                                                <canvas width="448" height="360"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="width-expand">
+                                            <h4 class="donvi__item1__title"><a href="">Thanh Hóa tổ chức Lễ Phát động Tháng hành động vì an toàn thực phẩm năm 2018</a></h4>
+                                            <p class="home__box3__desc">Nem được làm bằng thịt lợn nạc lọc kỹ để bỏ gân, giã nhỏ mịn. Bì lợn cạo sạch, luộc chín thái chỉ trộn với thịt nạc xay, nêm muối tinh rang khô, nước mắm ngon, mì chính hạt tiêu và thính. Thính được làm từ gạo rang chín vàng thơm rồi xay thật nhỏ. Cách tra thính nhiều hay ít, sớm hay muộn, cũng là bí quyết riêng của từng nhà nem. Tất cả được ủ một thời gian để lên men.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endfor; ?>
+                        </div>
                     </div>
                 </div>
                 <div class="width-1-3-m">
